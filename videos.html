@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhiariya Baliyan - Videos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+    nav {
+      background-color: #2c3e50;
+      padding: 1em;
+      color: #fff;
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav ul li a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .video-container.horizontal {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .video-box {
+      text-align: center;
+      width: 30%;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .video-box h3 {
+      margin-bottom: 10px;
+    }
+
+    .video-box video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .video-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Abhiariya </h1>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="videos" class="container">
+    <h2>Project Videos</h2>
+    <div class="video-container horizontal">
+      <div class="video-box">
+        <h3>Five Ring Theory Introduction</h3>
+        <video controls poster="https://source.unsplash.com/featured/?rings,abstract">
+          <source src="C:\Users\akhil\OneDrive\Desktop\WhatsApp Video 2025-05-26 at 16.44.47_6c66b13d.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-box">
+        <h3>Sixer Theory Introduction</h3>
+        <video controls poster="https://source.unsplash.com/featured/?technology,innovation">
+          <source src="C:\Users\akhil\OneDrive\Desktop\WhatsApp Video 2025-05-26 at 16.45.21_60c6d8b7.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-box">
+        <h3>Final Reflection Video Log</h3>
+        <video controls poster="https://source.unsplash.com/featured/?reflection,journal">
+          <source src="C:\Users\akhil\OneDrive\Desktop\WhatsApp Video 2025-05-26 at 16.45.11_a6ae6b89.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

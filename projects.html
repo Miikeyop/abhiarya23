@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhiariya Baliyan - Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 1em;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    #projects {
+      margin-top: 20px;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .project-item {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .project-item h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .project-item p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Abhiariya Baliyan</h1>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+      <h3>Heart Disease Prediction using Logistic Regression & Random Forest</h3>
+      <p>
+        This project focuses on predicting heart disease using machine learning. Two models were developed:
+        <strong>Logistic Regression</strong> with 85% accuracy and <strong>Random Forest</strong> with 98% accuracy.
+        The models analyze features like age, cholesterol, blood pressure, and max heart rate from the UCI Heart Disease dataset to predict disease presence.
+        This work aims to enable early diagnosis and better health outcomes.
+      </p>
+    </div>
+
+    <div class="project-item">
+      <h3>Heart Disease Prediction Web App using Streamlit</h3>
+      <p>
+        This project builds a user-friendly web application using <strong>Streamlit</strong> that allows users to input health data and get instant heart disease predictions based on the logistic regression model.
+        The app presents results clearly with confidence scores and explains key features influencing predictions, making it accessible to everyone.
+      </p>
+    </div>
+
+    <div class="project-item">
+      <h3>Sorting Visualizer using HTML, CSS, and JavaScript</h3>
+      <p>
+        An interactive web tool that visualizes popular sorting algorithms like Bubble Sort, Merge Sort, and Quick Sort.
+        Users can select an algorithm and watch how it sorts an array step-by-step, enhancing understanding through animation and visual feedback.
+        Built fully with front-end technologies, it’s perfect for teaching algorithm concepts in a fun way.
+      </p>
+    </div>
+
+  </section>
+</body>
+</html>
